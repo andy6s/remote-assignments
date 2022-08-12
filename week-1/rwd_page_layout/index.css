@@ -23,7 +23,7 @@ h3 {
 }
 
 button {
-	background: lightsteelblue;
+    background: lightsteelblue;
     border: none;
     padding: 15px 32px;
     text-align: center;
@@ -95,8 +95,8 @@ a {
 
 .banner {
     text-align: center;
-	background: lightsteelblue;
-	padding: 4rem 0;
+    background: lightsteelblue;
+    padding: 4rem 0;
 }
 
 /************************
