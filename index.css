@@ -1,0 +1,150 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+} 
+
+body {
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  background-color: snow;
+  align-items: center;
+  font-family: "Times New Roman", Times, serif;
+}
+
+h3 {
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 0
+}
+
+button {
+    background: lightsteelblue;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 0.8rem;
+    margin-bottom: 3rem;
+    font-family: "Times New Roman", Times, serif;
+}
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+.Navbar {
+    background-color: whitesmoke;
+    display: flex;
+    padding: 1rem;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 0.8em;
+    color: black;
+}
+  
+.Navbar__Link {
+    padding-right: 2rem;
+}
+  
+.Navbar__Items--right {
+    display: flex;
+    margin-left:auto;
+}
+  
+.Navbar__Link-toggle {
+    display: none;
+}
+
+a {
+    color: black;
+    text-align: center;
+    text-decoration: none;
+}
+  
+/* ---- Layout Containers ---- */
+
+.container{
+    display: grid;
+    margin: 1.5rem auto;
+    width:85%;
+    max-width: 1200px;
+    justify-content: center;
+    grid-template-columns: 50% 50%;
+    grid-row: auto auto;
+    grid-column-gap: 0.5rem;
+    grid-row-gap: 0.5rem;  
+}
+
+.box{
+    background-color: lightslategrey;
+    margin: 5px;
+    padding: 10px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    height: 20vh;
+    font-size: 1rem;
+}
+
+.banner {
+    text-align: center;
+    background: lightsteelblue;
+    padding: 4rem 0;
+}
+
+/************************
+MEDIA QUERIES
+**************************/
+
+@media screen and (width < 500px) {
+    .Navbar__Items,
+    .Navbar {
+      flex-direction: column;
+    }
+      
+    .Navbar__Items--right {
+      display:none;
+      margin-left:0;
+    }
+      
+    .Navbar__Link-toggle {
+      align-self: flex-end;
+      display: initial;
+      position: absolute;
+      cursor: pointer;
+    } 
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 20px;
+        grid-row-gap: 20px;
+    }
+  }
+
+@media screen and (width >= 500px) and (width < 800px) {
+    .Navbar__Items,
+    .Navbar {
+      flex-direction: column;
+    }
+      
+    .Navbar__Items--right {
+      display:none;
+      margin-left:0;
+    }
+      
+    .Navbar__Link-toggle {
+      align-self: flex-end;
+      display: initial;
+      position: absolute;
+      cursor: pointer;
+    } 
+}
+
